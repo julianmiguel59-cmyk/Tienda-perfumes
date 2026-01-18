@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Essence Perfumes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: #111;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c9a96a;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1585386959984-a41552231693') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 10px black;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #c9a96a;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #c9a96a;
+            color: black;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ESSENCE PERFUMES</h1>
+    <p>Fragancias exclusivas para cada estilo</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Perfumes</a>
+    <a href="#">Ofertas</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section class="hero">
+    <h2>Descubrí tu fragancia perfecta</h2>
+</section>
+
+<section class="container">
+    <h2 style="text-align:center;">Nuestros Perfumes</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f">
+            <div class="product-info">
+                <h3>Dior Sauvage</h3>
+                <p class="price">$120.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1610465299993-ff3b3b7d0a6b">
+            <div class="product-info">
+                <h3>Chanel Nº5</h3>
+                <p class="price">$135.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569">
+            <div class="product-info">
+                <h3>Yves Saint Laurent Y</h3>
+                <p class="price">$128.000</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Essence Perfumes | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
